@@ -43,8 +43,9 @@
 Apache Commons BeanUtils
 ===================
 
+[![License](http://img.shields.io/:license-apache-yellow.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.melloware/commons-beanutils2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.melloware/commons-beanutils2/)
-[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-beanutils2/2.0.0.svg)](https://javadoc.io/doc/com.melloware/commons-beanutils2/2.0.0)
+
 
 Apache Commons BeanUtils provides an easy-to-use but flexible wrapper around reflection and introspection.
 
