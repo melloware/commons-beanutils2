@@ -43,10 +43,8 @@
 Apache Commons BeanUtils
 ===================
 
-[![Build Status](https://travis-ci.org/apache/commons-beanutils.svg)](https://travis-ci.org/apache/commons-beanutils)
-[![Coverage Status](https://coveralls.io/repos/apache/commons-beanutils/badge.svg)](https://coveralls.io/r/apache/commons-beanutils)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-beanutils2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-beanutils2/)
-[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-beanutils2/2.0.0.svg)](https://javadoc.io/doc/org.apache.commons/commons-beanutils2/2.0.0)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.melloware/commons-beanutils2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.melloware/commons-beanutils2/)
+[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-beanutils2/2.0.0.svg)](https://javadoc.io/doc/com.melloware/commons-beanutils2/2.0.0)
 
 Apache Commons BeanUtils provides an easy-to-use but flexible wrapper around reflection and introspection.
 
@@ -65,7 +63,7 @@ Alternatively you can pull it from the central Maven repositories:
 
 ```xml
 <dependency>
-  <groupId>org.apache.commons</groupId>
+  <groupId>com.melloware</groupId>
   <artifactId>commons-beanutils2</artifactId>
   <version>2.0.0</version>
 </dependency>
