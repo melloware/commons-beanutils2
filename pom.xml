@@ -16,11 +16,6 @@
    limitations under the License.
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <parent>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-parent</artifactId>
-        <version>52</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.melloware</groupId>
     <artifactId>commons-beanutils2</artifactId>
@@ -34,6 +29,10 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <default.encoding>UTF-8</default.encoding>
+        <project.build.sourceEncoding>${default.encoding}</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>${default.encoding}</project.reporting.outputEncoding>
+        <maven.compiler.plugin.encoding>${default.encoding}</maven.compiler.plugin.encoding>
         <commons.componentid>beanutils</commons.componentid>
         <commons.module.name>org.apache.commons.beanutils2</commons.module.name>
         <!-- Current version -->
@@ -344,6 +343,7 @@
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
+                <version>5.1.1</version>
                 <dependencies>
                     <dependency>
                         <groupId>biz.aQute.bnd</groupId>
@@ -361,7 +361,7 @@
                     <!-- limit memory size see BEANUTILS-291
                      ..also include ${argLine} from jacoco-maven-plugin
           -->
-                    <argLine>${surefire.argLine} ${argLine}</argLine>
+                    <argLine>${surefire.argLine}</argLine>
                     <includes>
                         <include>**/*TestCase.java</include>
                     </includes>
@@ -404,22 +404,6 @@
                 </configuration>
             </plugin>
         </plugins>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-scm-publish-plugin</artifactId>
-                    <configuration>
-                        <!-- when moving to svnpubsub links to previous releases must be fixed -->
-                        <!-- ignore paths manual content -->
-                        <ignorePathsToDelete>
-                            <ignorePathToDelete>javadocs**</ignorePathToDelete>
-                            <ignorePathToDelete>release-notes**</ignorePathToDelete>
-                        </ignorePathsToDelete>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
     </build>
 
     <distributionManagement>
