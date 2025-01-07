@@ -5,4 +5,4 @@ Apache Commons BeanUtils
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.melloware/commons-beanutils2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.melloware/commons-beanutils2/)
 
 > [!IMPORTANT]
->  This fork was necessary because 6 years without a BeanUtils2 release and many people needed one including my clients.  Now that Apache Commons BeanUtils2 is on Maven Central 2.0.0-M1 this fork is no longer necessary so I am putting it in Archived mode!
+>  This fork became necessary due to the lack of a BeanUtils2 release for six years, which many, including my clients, urgently needed. Now that Apache Commons BeanUtils2 version 2.0.0-M1 is available on Maven Central, this fork is no longer required. Therefore, I am archiving it!
